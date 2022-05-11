@@ -1,0 +1,22 @@
+{% extends 'core/base.html' %}
+
+{% block head_title %}Banking System{% endblock %}
+
+{% block content %}
+    <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
+        <!--Left Col-->
+        <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 px-6">
+            <h1 class="font-bold text-4xl my-4">BankBuys</h1>
+            <p class="leading-normal mb-4">
+                Your trust Our Investment
+            </p>
+            <div>
+            <a href="{% url 'accounts:user_registration' %}" class="bg-transparent hover:bg-blue-800 text-gray-800 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent">Register</a>
+            </div>
+        </div>
+        <!--Right Col-->
+        <div class="w-full lg:w-1/2 lg:py-6 text-fill">
+            <img src="static\imgs\Banking.jpeg" alt="" width="1500" height="160" object-fit="cover">
+        </div>
+    </div>
+{% endblock %}
